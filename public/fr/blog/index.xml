@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Hot coffee ☕🍪</title>
-    <link>http://localhost:1313/fr/</link>
-    <description>Recent content on Hot coffee ☕🍪</description>
+    <title>Blog on Hot coffee ☕🍪</title>
+    <link>http://localhost:1313/fr/blog/</link>
+    <description>Recent content in Blog on Hot coffee ☕🍪</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>fr-FR</language>
     <managingEditor>ivan.bethus@gmail.com (Ivan Béthus)</managingEditor>
     <webMaster>ivan.bethus@gmail.com (Ivan Béthus)</webMaster>
     <copyright>Ivan Béthus (CC BY 4.0)</copyright>
     <lastBuildDate>Wed, 17 Apr 2024 22:27:52 +0200</lastBuildDate>
-    <atom:link href="http://localhost:1313/fr/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/fr/blog/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Second article</title>
       <link>http://localhost:1313/fr/blog/second_article/</link>
