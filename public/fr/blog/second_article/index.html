@@ -10,7 +10,8 @@
 <meta name="title" content="Second article" />
 <meta name="description" content="Introduction J&rsquo;ai quand même l&rsquo;impression que c&rsquo;est nettement plus facile d&rsquo;écrire ce blog en markdown !
 Exemple Le code est plus joli !
-1String toto = &#34;toto&#34;; 2System.Out.println(toto); Et je peux faire ça !" />
+1String toto = &#34;toto&#34;; 2System.Out.println(toto); Et je peux faire ça !
+sequenceDiagramparticipant Aliceparticipant BobAlice-&gt;&gt;John: Hello John, how are you?loop HealthcheckJohn-&gt;&gt;John: Fight against hypochondriaendNote right of John: Rational thoughts prevail!John--&gt;&gt;Alice: Great!John-&gt;&gt;Bob: How about you?Bob--&gt;&gt;John: Jolly good!" />
 <meta name="author" content="" />
 <meta name="keywords" content="" />
 
@@ -23,9 +24,7 @@ Exemple Le code est plus joli !
   <meta property="og:url" content="http://localhost:1313/fr/blog/second_article/">
   <meta property="og:site_name" content="Hot coffee ☕🍪">
   <meta property="og:title" content="Second article">
-  <meta property="og:description" content="Introduction J&amp;rsquo;ai quand même l&amp;rsquo;impression que c&amp;rsquo;est nettement plus facile d&amp;rsquo;écrire ce blog en markdown !
-Exemple Le code est plus joli !
-1String toto = &amp;#34;toto&amp;#34;; 2System.Out.println(toto); Et je peux faire ça !">
+  <meta property="og:description" content="Introduction J&amp;rsquo;ai quand même l&amp;rsquo;impression que c&amp;rsquo;est nettement plus facile d&amp;rsquo;écrire ce blog en markdown ! Exemple Le code est plus joli ! 1String toto = &amp;#34;toto&amp;#34;; 2System.Out.println(toto); Et je peux faire ça ! sequenceDiagramparticipant Aliceparticipant BobAlice-&gt;&gt;John: Hello John, how are you?loop HealthcheckJohn-&gt;&gt;John: Fight against hypochondriaendNote right of John: Rational thoughts prevail!John--&gt;&gt;Alice: Great!John-&gt;&gt;Bob: How about you?Bob--&gt;&gt;John: Jolly good!">
   <meta property="og:locale" content="fr-FR">
   <meta property="og:type" content="article">
   <meta property="article:section" content="blog">
@@ -37,7 +36,8 @@ Exemple Le code est plus joli !
   <meta name="twitter:card" content="summary"><meta name="twitter:title" content="Second article">
 <meta name="twitter:description" content="Introduction J&rsquo;ai quand même l&rsquo;impression que c&rsquo;est nettement plus facile d&rsquo;écrire ce blog en markdown !
 Exemple Le code est plus joli !
-1String toto = &#34;toto&#34;; 2System.Out.println(toto); Et je peux faire ça !">
+1String toto = &#34;toto&#34;; 2System.Out.println(toto); Et je peux faire ça !
+sequenceDiagramparticipant Aliceparticipant BobAlice-&gt;&gt;John: Hello John, how are you?loop HealthcheckJohn-&gt;&gt;John: Fight against hypochondriaendNote right of John: Rational thoughts prevail!John--&gt;&gt;Alice: Great!John-&gt;&gt;Bob: How about you?Bob--&gt;&gt;John: Jolly good!">
 
 
   
@@ -45,10 +45,11 @@ Exemple Le code est plus joli !
   <meta itemprop="name" content="Second article">
   <meta itemprop="description" content="Introduction J&rsquo;ai quand même l&rsquo;impression que c&rsquo;est nettement plus facile d&rsquo;écrire ce blog en markdown !
 Exemple Le code est plus joli !
-1String toto = &#34;toto&#34;; 2System.Out.println(toto); Et je peux faire ça !">
+1String toto = &#34;toto&#34;; 2System.Out.println(toto); Et je peux faire ça !
+sequenceDiagramparticipant Aliceparticipant BobAlice-&gt;&gt;John: Hello John, how are you?loop HealthcheckJohn-&gt;&gt;John: Fight against hypochondriaendNote right of John: Rational thoughts prevail!John--&gt;&gt;Alice: Great!John-&gt;&gt;Bob: How about you?Bob--&gt;&gt;John: Jolly good!">
   <meta itemprop="datePublished" content="2024-04-17T22:27:52+02:00">
   <meta itemprop="dateModified" content="2024-04-17T22:27:52+02:00">
-  <meta itemprop="wordCount" content="34">
+  <meta itemprop="wordCount" content="68">
 
 <meta name="referrer" content="no-referrer-when-downgrade" />
 
@@ -66,6 +67,12 @@ Exemple Le code est plus joli !
 </head>
 
 <body>
+  
+  <script type="module">
+    import mermaid from 'https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.esm.min.mjs';
+    mermaid.initialize({ startOnLoad: true });
+  </script>
+
   <header><a class="skip-link" href="#main-content">Skip to main content</a>
 
 <a href="/fr/" class="title"><h1>Hot coffee ☕🍪</h1></a>
@@ -113,7 +120,19 @@ Exemple Le code est plus joli !
 <blockquote>
 <p>Et je peux faire ça !</p>
 </blockquote>
-
+<pre class="mermaid">sequenceDiagram
+    participant Alice
+    participant Bob
+    Alice->>John: Hello John, how are you?
+    loop Healthcheck
+        John->>John: Fight against hypochondria
+    end
+    Note right of John: Rational thoughts <br/>prevail!
+    John-->>Alice: Great!
+    John->>Bob: How about you?
+    Bob-->>John: Jolly good!
+  </pre>
+  
 </content>
 <p>
   
