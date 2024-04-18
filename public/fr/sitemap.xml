@@ -2,71 +2,56 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/fr/</loc>
+    <loc>https://example.org/blog/</loc>
+    <lastmod>2024-04-17T22:27:52+02:00</lastmod>
+  </url><url>
+    <loc>https://example.org/</loc>
     <lastmod>2024-04-17T22:27:52+02:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://localhost:1313/"
+                href="https://example.org/en/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr-FR"
-                href="http://localhost:1313/fr/"
+                href="https://example.org/"
                 />
   </url><url>
-    <loc>http://localhost:1313/fr/blog/</loc>
-    <lastmod>2024-04-17T22:27:52+02:00</lastmod>
+    <loc>https://example.org/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://localhost:1313/blog/"
+                href="https://example.org/en/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr-FR"
-                href="http://localhost:1313/fr/blog/"
+                href="https://example.org/categories/"
                 />
   </url><url>
-    <loc>http://localhost:1313/fr/genres/cheatsheet/</loc>
-    <lastmod>2024-04-17T22:27:52+02:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/fr/blog/cheatsheet/</loc>
-    <lastmod>2024-04-17T22:27:52+02:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/fr/tags/dev/</loc>
-    <lastmod>2024-04-17T22:27:52+02:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/fr/genres/</loc>
-    <lastmod>2024-04-17T22:27:52+02:00</lastmod>
+    <loc>https://example.org/search/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://localhost:1313/genres/"
+                href="https://example.org/en/search/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr-FR"
-                href="http://localhost:1313/fr/genres/"
+                href="https://example.org/search/"
                 />
   </url><url>
-    <loc>http://localhost:1313/fr/tags/markdown/</loc>
-    <lastmod>2024-04-17T22:27:52+02:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/fr/tags/quickfix/</loc>
-    <lastmod>2024-04-17T22:27:52+02:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/fr/tags/</loc>
-    <lastmod>2024-04-17T22:27:52+02:00</lastmod>
+    <loc>https://example.org/tags/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://localhost:1313/tags/"
+                href="https://example.org/en/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr-FR"
-                href="http://localhost:1313/fr/tags/"
+                href="https://example.org/tags/"
                 />
   </url>
 </urlset>
