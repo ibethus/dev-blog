@@ -1,6 +1,6 @@
 baseURL = 'https://example.org/'
 languageCode = 'fr-FR'
-title = 'Hot coffee ☕🍪'
+title = 'Hot coffee - devBlog ☕'
 theme = 'hugo-bearcub'
 themeStyle = 'herman'
 copyright = "Ivan Béthus (CC BY 4.0)"
@@ -30,6 +30,10 @@ enableRobotsTXT = true
     lineNumbersInTable = false
     noClasses = false
 
+[taxonomies]
+  genre = 'genres'
+  tag = 'tags'
+
 [params]
   # The description of your website
   description = "Another blog about development."
@@ -39,8 +43,9 @@ enableRobotsTXT = true
 
   hideUntranslated = true
 
-  custom_css = ["https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css", "adoc.css"]
+  generateSocialCard = true
+
 
  [params.author]
-    name = "Ivan Béthus" # Your name as shown in the RSS feed metadata
+    name = "Ivan Béthus"
     email = "ivan.bethus@gmail.com" 
