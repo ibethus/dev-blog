@@ -1,0 +1,72 @@
+baseURL: https://example.org/
+languageCode: fr-FR
+title: Hot coffee - devBlog ☕
+theme: PaperMod
+copyright: Ivan Béthus (CC BY 4.0) - 2024
+enableRobotsTXT: true
+defaultContentLanguage: fr
+minify:
+  disableXML: true
+  minifyOutput: true
+languages:
+  en:
+    disabled: false
+    contentDir: content/en
+    languageCode: en-US
+    languageDirection: ""
+    languageName: English
+    weight: 2
+  fr:
+    disabled: false
+    contentDir: content/fr
+    languageCode: fr-FR
+    languageDirection: ""
+    languageName: Français
+    weight: 1
+markup:
+  highlight:
+    #anchorLineNos: true
+    codeFences: true
+    guessSyntax: true
+    lineNos: true
+    # noClasses: false
+    style: monokai
+taxonomies:
+  genre: genres
+  tag: tags
+params:
+  hideUntranslated: true
+  generateSocialCard: true
+  ShowReadingTime: true
+  ShowPostNavLinks: true
+  ShowBreadCrumbs: true
+  ShowCodeCopyButtons: true
+  ShowWordCount: true
+  ShowRssButtonInSectionTermList: true
+  UseHugoToc: true
+  disableSpecial1stPost: false
+  disableScrollToTop: false
+  comments: false
+  hidemeta: false
+  hideSummary: false
+  showtoc: true
+  tocopen: false
+  author: Ivan Béthus
+  assets:
+    favicon: images/favicon.png
+    disableHLJS: true
+  cover:
+    hidden: true
+    hiddenInList: true
+    hiddenInSingle: true
+  label:
+    text: Hot coffee - devBlog ☕
+  params:
+  profileMode:
+    enabled: true
+    subtitle: "Some more dev blog posts."
+    buttons:
+      - name: Blog
+        url: "blog"
+      - name: Github
+        url: "https://github.com/ibethus/"
