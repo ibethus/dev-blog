@@ -16,6 +16,17 @@ languages:
     languageDirection: ""
     languageName: English
     weight: 2
+    taxonomies:
+      category: categories
+      tag: tags
+    menu:
+      main:
+        - name: Blog
+          url: blog
+          weight: 1
+        - name: Search
+          url: /search
+          weight: 2
   fr:
     disabled: false
     contentDir: content/fr
@@ -23,6 +34,17 @@ languages:
     languageDirection: ""
     languageName: Français
     weight: 1
+    taxonomies:
+      category: categories
+      tag: tags
+    menu:
+      main:
+        - name: Blog
+          url: blog
+          weight: 1
+        - name: Recherche
+          url: search
+          weight: 2
 markup:
   highlight:
     #anchorLineNos: true
@@ -53,7 +75,7 @@ params:
   tocopen: false
   author: Ivan Béthus
   assets:
-    favicon: images/favicon.png
+    favicon: /favicon.png
     disableHLJS: true
   cover:
     hidden: true
@@ -68,5 +90,15 @@ params:
     buttons:
       - name: Blog
         url: "blog"
-      - name: Github
-        url: "https://github.com/ibethus/"
+  socialIcons: # optional
+    - name: github
+      url: "https://github.com/ibethus/"
+    - name: linkedin
+      url: "https://www.linkedin.com/in/ivan-b%C3%A9thus-570067b2/"
+    - name: dev
+      url: "https://dev.to/ibethus"
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON # necessary for search
