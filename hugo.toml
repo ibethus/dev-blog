@@ -1,8 +1,7 @@
 baseURL = 'https://example.org/'
 languageCode = 'fr-FR'
 title = 'Hot coffee - devBlog ☕'
-theme = 'hugo-bearcub'
-themeStyle = 'herman'
+theme = 'PaperMod'
 copyright = "Ivan Béthus (CC BY 4.0)"
 
 # Generate a nice robots.txt for SEO

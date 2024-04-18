@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>Hot coffee ☕🍪</title>
+    <title>Home on Hot coffee - devBlog ☕</title>
     <link>http://localhost:1313/fr/</link>
-    <description>Recent content on Hot coffee ☕🍪</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <description>Recent content in Home on Hot coffee - devBlog ☕</description>
+    <generator>Hugo -- 0.125.0</generator>
     <language>fr-FR</language>
     <managingEditor>ivan.bethus@gmail.com (Ivan Béthus)</managingEditor>
     <webMaster>ivan.bethus@gmail.com (Ivan Béthus)</webMaster>
@@ -12,37 +12,14 @@
     <lastBuildDate>Wed, 17 Apr 2024 22:27:52 +0200</lastBuildDate>
     <atom:link href="http://localhost:1313/fr/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Second article</title>
-      <link>http://localhost:1313/fr/blog/second_article/</link>
+      <title>CheatSheet</title>
+      <link>http://localhost:1313/fr/blog/cheatsheet/</link>
       <pubDate>Wed, 17 Apr 2024 22:27:52 +0200</pubDate><author>ivan.bethus@gmail.com (Ivan Béthus)</author>
-      <guid>http://localhost:1313/fr/blog/second_article/</guid>
-      <description>Introduction J&amp;rsquo;ai quand même l&amp;rsquo;impression que c&amp;rsquo;est nettement plus facile d&amp;rsquo;écrire ce blog en markdown !&#xA;Exemple Le code est plus joli !&#xA;1String toto = &amp;#34;toto&amp;#34;; 2System.Out.println(toto); Et je peux faire ça !&#xA;sequenceDiagram&#xD;participant Alice&#xD;participant Bob&#xD;Alice-&gt;&gt;John: Hello John, how are you?&#xD;loop Healthcheck&#xD;John-&gt;&gt;John: Fight against hypochondria&#xD;end&#xD;Note right of John: Rational thoughts prevail!&#xD;John--&gt;&gt;Alice: Great!&#xD;John-&gt;&gt;Bob: How about you?&#xD;Bob--&gt;&gt;John: Jolly good!&#xD;</description>
-      <content:encoded><![CDATA[<h1 id="introduction">Introduction</h1>
-<p>J&rsquo;ai quand même l&rsquo;impression que c&rsquo;est nettement plus facile d&rsquo;écrire ce blog en markdown !</p>
-<h2 id="exemple">Exemple</h2>
-<p>Le <em>code</em> est plus joli !</p>
-
-
-
-
-<div class="highlight"><pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="ln">1</span><span class="cl"><span class="n">String</span><span class="w"> </span><span class="n">toto</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&#34;toto&#34;</span><span class="p">;</span><span class="w">
-</span></span></span><span class="line"><span class="ln">2</span><span class="cl"><span class="w"></span><span class="n">System</span><span class="p">.</span><span class="na">Out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="n">toto</span><span class="p">);</span></span></span></code></pre></div>
-<blockquote>
-<p>Et je peux faire ça !</p>
-</blockquote>
-<pre class="mermaid">sequenceDiagram
-    participant Alice
-    participant Bob
-    Alice->>John: Hello John, how are you?
-    loop Healthcheck
-        John->>John: Fight against hypochondria
-    end
-    Note right of John: Rational thoughts <br/>prevail!
-    John-->>Alice: Great!
-    John->>Bob: How about you?
-    Bob-->>John: Jolly good!
-  </pre>
-  ]]></content:encoded>
+      <guid>http://localhost:1313/fr/blog/cheatsheet/</guid>
+      <description>Introduction J&amp;rsquo;ai quand même l&amp;rsquo;impression que c&amp;rsquo;est nettement plus facile d&amp;rsquo;écrire ce blog en markdown !
+Exemple Le code est plus joli ! 1
+1String toto = &amp;#34;toto&amp;#34;; 2System.Out.println(toto); Et je peux faire ça !
+sequenceDiagramparticipant Aliceparticipant BobAlice-&gt;&gt;John: Hello John, how are you?loop HealthcheckJohn-&gt;&gt;John: Fight against hypochondriaendNote right of John: Rational thoughts prevail!John--&gt;&gt;Alice: Great!John-&gt;&gt;Bob: How about you?Bob--&gt;&gt;John: Jolly good!git ---title: Example Git diagram---gitGraphcommitcommitbranch developcheckout developcommitcommitcheckout mainmerge developcommitcommitImage On peut afficher une image aussi : Et voilà la note !</description>
     </item>
   </channel>
 </rss>

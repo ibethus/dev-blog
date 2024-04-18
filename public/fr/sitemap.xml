@@ -28,22 +28,36 @@
                 href="http://localhost:1313/fr/blog/"
                 />
   </url><url>
-    <loc>http://localhost:1313/fr/blog/second_article/</loc>
+    <loc>http://localhost:1313/fr/genres/cheatsheet/</loc>
     <lastmod>2024-04-17T22:27:52+02:00</lastmod>
   </url><url>
-    <loc>http://localhost:1313/fr/categories/</loc>
+    <loc>http://localhost:1313/fr/blog/cheatsheet/</loc>
+    <lastmod>2024-04-17T22:27:52+02:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/fr/tags/dev/</loc>
+    <lastmod>2024-04-17T22:27:52+02:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/fr/genres/</loc>
+    <lastmod>2024-04-17T22:27:52+02:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
-                href="http://localhost:1313/categories/"
+                href="http://localhost:1313/genres/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr-FR"
-                href="http://localhost:1313/fr/categories/"
+                href="http://localhost:1313/fr/genres/"
                 />
   </url><url>
+    <loc>http://localhost:1313/fr/tags/markdown/</loc>
+    <lastmod>2024-04-17T22:27:52+02:00</lastmod>
+  </url><url>
+    <loc>http://localhost:1313/fr/tags/quickfix/</loc>
+    <lastmod>2024-04-17T22:27:52+02:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/fr/tags/</loc>
+    <lastmod>2024-04-17T22:27:52+02:00</lastmod>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-US"
