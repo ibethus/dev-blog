@@ -1,7 +1,7 @@
 ---
 title: 'Git : update-refs en un tournemain'
 date: 2024-04-22T22:20:06+02:00
-draft: true
+draft: false
 ---
 
 Lorsque l'on travaille sur un projet versionné, il est relativement commun de se retrouver avec un "empilement" de branches. Quoi de plus frustrant, lorsque l'on met à jour la première de ces branches, que de _rebase_ toutes les autres par-dessus ? Ce processus est d'autant plus fastidieux que le nombre de branches est élevé ou qu'on les modifie régulièrement.
