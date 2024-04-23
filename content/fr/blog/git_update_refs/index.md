@@ -70,7 +70,7 @@ Ainsi, dans notre cas, on peut simplement _checkout_ notre branche `ma-feature-v
 ```
 
 **En pratique :**
-![git rebase updates refs gif](/git_update_refs_fr.gif)
+![git rebase updates refs gif](git_update_refs_fr.gif)
 
 ### Mise à jour du dépôt distant
 Même si les branches que l'on manipule ont déjà été poussées sur le dépôt distant, il est possible de toutes les mettre à jour en une seule commande : `git push -f origin ma-feature-v1 ma-feature-v2 ma-feature-v3`
