@@ -27,7 +27,7 @@ Dans l'exemple ci-dessous, on a créé trois branches dépendantes les unes des 
        commit id: "mon dernier commit"
 ```
 
-Admettons qu'on l'on ait fait une petite faute de frappe dans le commit de la branche `ma-feature-v1`. Un deuxième commit doit être ajouté pour régler le problème et on se retrouve alors avec l'historique suivant :
+Admettons que l'on ait fait une petite faute de frappe dans le commit de la branche `ma-feature-v1`. Un deuxième commit doit être ajouté pour régler le problème et on se retrouve alors avec l'historique suivant :
 
 ```mermaid
 %%{init: { 'logLevel': 'info', 'theme': 'base' } }%%
