@@ -27,7 +27,7 @@ Dans l'exemple ci-dessous, on a créé trois branches dépendantes les unes des 
        commit id: "mon dernier commit"
 ```
 
-Admettons qu'on l'on ait fait une petite faute de frappe dans le commit de la branche `ma-feature-v1`. Un deuxième commit doit être ajouté pour régler le problème et on se retrouve alors avec l'historique suivant :
+Admettons que l'on ait fait une petite faute de frappe dans le commit de la branche `ma-feature-v1`. Un deuxième commit doit être ajouté pour régler le problème et on se retrouve alors avec l'historique suivant :
 
 ```mermaid
 %%{init: { 'logLevel': 'info', 'theme': 'base' } }%%
@@ -73,9 +73,9 @@ Ainsi, dans notre cas, on peut simplement _checkout_ notre branche `ma-feature-v
 ![git rebase updates refs gif](git_update_refs_fr.gif)
 
 ### Mise à jour du dépôt distant
-Même si les branches que l'on manipule ont déjà été poussées sur le dépôt distant, il est possible de toutes les mettre à jour en une seule commande : `git push -f origin ma-feature-v1 ma-feature-v2 ma-feature-v3`
+Même si les branches que l'on manipule ont déjà été poussées sur le dépôt distant, il est possible de toutes les mettre à jour en une seule commande : `git push --force-with-lease origin ma-feature-v1 ma-feature-v2 ma-feature-v3`
 
-> L'option -f est nécessaire puisque des modifications d'historiques ont été faites lors du _rebase_
+> On utilise ici un `push force` particulier pour préserver l'historique distant[^2]
 
 ### Activation globale
 Pourquoi ne pas toujours utiliser l'option `update-refs` lors d'un _rebase_ ? L'équipe de git s'est posé la même question et a décidé d'inclure cette possibilité dans la configuration. 
@@ -83,9 +83,10 @@ Ainsi, `git config --global rebase.updateRefs true` active l'option globalement,
 
 ### En résumé
 * `git rebase {ma-branche} --update-refs` met à jour une branche et toutes ses dépendances
-* `git push -f origin ma-branche-1 ma-branche-2 ma-branche-n` pousse la mise à jour de ces branches sur le dépôt distant
+* `git push --force-with-lease origin ma-branche-1 ma-branche-2 ma-branche-n` pousse la mise à jour de ces branches sur le dépôt distant
   
 
 Joyeux _rebase_ !
 
 [^1]: La note de version est diponible [ici](https://github.blog/2022-10-03-highlights-from-git-2-38/#rebase-dependent-branches-with-update-refs)
+[^2]: Voir le [cas d'usage](https://blog.stack-labs.com/code/git_force_with_lease/)
