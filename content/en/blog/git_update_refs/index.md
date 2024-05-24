@@ -45,7 +45,7 @@ Let's say a small typo was made in the commit of the `my-feature-v1` branch. A s
 
 In this situation, the only solution to update `my-feature-v2` and `my-feature-v3` is to checkout and rebase v2 on v1, then v3 on v2.
 
-This tedious process is remedied by the `update-refs` rebase option.
+This cumbersome process is remedied by the `update-refs` rebase option.
 
 ## The solution
 ### update-refs
