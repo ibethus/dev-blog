@@ -46,6 +46,9 @@ languages:
           url: search
           weight: 2
 markup:
+  goldmark:
+    renderer:
+        unsafe: true
   highlight:
     #anchorLineNos: true
     codeFences: true

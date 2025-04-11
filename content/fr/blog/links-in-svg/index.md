@@ -4,6 +4,12 @@ date: 2025-02-03T18:20:06+02:00
 draft: false
 ---
 
+ <style>
+    a:hover{
+        text-decoration: underline;
+    }
+</style>
+
 ## Introduction
 
 Les images SVG (Scalable Vector Graphics) sont largement utilisées sur le web en raison de leur capacité à être redimensionnées sans perte de qualité. Il s'agit d'un fichier au format xml, aisément inclut et modifié dans une page web.  
@@ -27,10 +33,8 @@ Pour inclure des liens HTML dans une image SVG, rien de plus simple. Ajouter sim
     <a href="https://example.com">
         <rect x="50" y="50" width="100" height="100" fill="lightgreen"/>
         <text x="50%" y="50%" text-anchor="middle" dominant-baseline="middle" fill="white" font-size="10px">Click me!</text>
-    </a>
+    </a>   
 </svg>
-
-> En prime, le navigateur interprète bien le texte comme un lien, d'où le soulignage lors du "hover"
 
 ## Changer dynamiquement le style des images SVG
 De la même manière, il est tout à fait possible d'utiliser des sélecteurs css classiques pour appliquer des styles à chaque élément du svg, par exemple, une couleur. Notons que le style du svg est inclut par le logiciel de création de svg directement dans les balises (ici [photopea.com](photopea.com)).
@@ -113,5 +117,3 @@ Le SVG, c'est le format d'image du web par excellence ! Récapitulons pourquoi v
 Contrairement aux formats bitmap traditionnels, le SVG vous offre un contrôle total sur chaque élément de votre image. Imaginez pouvoir changer la couleur d'un logo au survol, animer un graphique ou rendre certaines parties cliquables - tout ça sans toucher à Photoshop !
 
 Prêt.e à vous lancer ? Essayez dès maintenant d'intégrer un SVG interactif dans votre prochain projet et vous verrez la différence. Vos utilisateurs (et votre portfolio) vous diront merci ! 😉
-
-N'hésitez pas à partager vos créations ou à poser vos questions dans les commentaires. À vos claviers !

@@ -4,6 +4,12 @@ date: 2025-02-03T18:20:06+02:00
 draft: false
 ---
 
+ <style>
+    a:hover{
+        text-decoration: underline;
+    }
+</style>
+
 ## Introduction
 
 SVG images (Scalable Vector Graphics) are widely used on the web due to their ability to scale without losing quality. They are XML-based files that can be easily included and modified in a web page.  
@@ -29,8 +35,6 @@ Adding HTML links to an SVG image is very simple. Just wrap any SVG element with
         <text x="50%" y="50%" text-anchor="middle" dominant-baseline="middle" fill="white" font-size="10px">Click me!</text>
     </a>
 </svg>
-
-> Bonus: The browser interprets the text as a link, which is why it gets underlined on hover.
 
 ## Dynamically Changing the Style of SVG Images
 
@@ -114,5 +118,3 @@ SVG is the ultimate image format for the web! Let's recap why you should adopt i
 Unlike traditional bitmap formats, SVG gives you full control over every element of your image. Imagine being able to change the color of a logo on hover, animate a chart, or make certain parts clickable - all without touching Photoshop!
 
 Ready to get started? Try integrating an interactive SVG into your next project, and you'll see the difference. Your users (and your portfolio) will thank you! 😉
-
-Feel free to share your creations or ask questions in the comments. Happy coding!
