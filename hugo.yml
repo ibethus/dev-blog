@@ -60,6 +60,7 @@ taxonomies:
   genre: genres
   tag: tags
 params:
+  ShowShareButtons: true
   hideUntranslated: true
   generateSocialCard: true
   ShowReadingTime: true
