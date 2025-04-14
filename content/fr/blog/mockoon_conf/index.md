@@ -14,9 +14,9 @@ Mockoon est un outil puissant qui permet de simuler des API REST avec une facili
 
 ### Les bases du mock
 
-Un **mock** (ou bouchon) est une imitation contrôlée d'un composant réel. Dans le contexte des APIs, il s'agit d'un serveur qui répond comme le ferait le véritable webservice, mais avec des données prédéfinies.
+> Un **mock** (ou bouchon) est une imitation contrôlée d'un composant réel. Dans le contexte des webservices, il s'agit d'un serveur qui répond comme le ferait le véritable webservice, mais avec des données prédéfinies.
 
-Mockoon se présente sous deux formes principales :
+Mockoon se présente sous deux formes :
 - **Une interface graphique (GUI)** : pour configurer visuellement vos mocks
 - **Une interface en ligne de commande (CLI)** : pour l'intégration dans vos pipelines CI/CD ou environnements de déploiement
 
@@ -36,24 +36,20 @@ Cette interface permet de mettre en place un mock fonctionnel en quelques clics,
 
 ### Import depuis Swagger/OpenAPI
 
-L'un des atouts majeurs de Mockoon est sa capacité à importer des spécifications OpenAPI (anciennement Swagger). Cette fonctionnalité permet de :
+L'un des atouts majeurs de Mockoon est sa capacité à [importer des contrats d'interface OpenAPI](https://mockoon.com/docs/latest/openapi/import-export-openapi-format/). Cette fonctionnalité permet de :
 
 1. Importer un fichier de spécification existant
 2. Créer automatiquement toutes les routes définies
 3. Générer des données aléatoires cohérentes grâce à [FakerJS](https://fakerjs.dev/)
 4. Personnaliser ces réponses avec le système de templating intégré
 
-{{ $url := "spacesuit-api.yaml" }}
-{{ $api := "" }}
-{{ with try (resources.GetRemote $url) }}
-  {{ with .Err }}
-    {{ errorf "%s" . }}
-  {{ else with .Value }}
-    {{ $api = . | openapi3.Unmarshal }}
-  {{ else }}
-    {{ errorf "Unable to get remote resource %q" $url }}
-  {{ end }}
-{{ end }}
+#### Exemple
+Ce [contrat d'interface open API](spacesuit-api.yaml) peut être importé par Mockoon, qui créera des routes http permettant de reproduire le comportement d'un webservice factice respectant le contrat :
+
+{{< openapi "spacesuit-api.yaml" >}}
+
+Dans Mockoon :
+![webservice clones dans Mockoon](webservice_clones.png)
 
 ### Data Buckets
 
