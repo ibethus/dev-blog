@@ -1,0 +1,13 @@
+{{ $url := .Get 0 }}
+
+<div id="swagger-ui"></div>
+
+<script>
+     window.onload = () => {
+    window.ui = SwaggerUIBundle({
+      url: '{{ $url }}',
+      dom_id: '#swagger-ui',
+    });
+  };
+</script>
+

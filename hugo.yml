@@ -2,7 +2,7 @@ baseURL: https://blog.hot-coffee.dev/
 languageCode: fr-FR
 title: Hot coffee - devBlog ☕
 theme: PaperMod
-copyright: Ivan Béthus (CC BY 4.0) - 2024
+copyright: Ivan Béthus (CC BY 4.0) - 2024-2025
 enableRobotsTXT: true
 defaultContentLanguage: fr
 minify:
@@ -60,6 +60,7 @@ taxonomies:
   genre: genres
   tag: tags
 params:
+  ShowShareButtons: true
   hideUntranslated: true
   generateSocialCard: true
   ShowReadingTime: true
@@ -71,19 +72,19 @@ params:
   UseHugoToc: false
   disableSpecial1stPost: false
   disableScrollToTop: false
-  comments: false
+  comments: true
   hidemeta: false
   hideSummary: false
   showtoc: true
-  tocopen: true
+  tocopen: false
   author: Ivan Béthus
   assets:
     favicon: /favicon.png
     disableHLJS: true
   cover:
-    hidden: true
+    hidden: false
     hiddenInList: true
-    hiddenInSingle: true
+    hiddenInSingle: false
   label:
     text: Hot coffee - devBlog ☕
   params:
@@ -93,9 +94,11 @@ params:
     buttons:
       - name: Blog
         url: "blog"
+      - name: Who am I ?
+        url: "https://github.com/ibethus"
   socialIcons: # optional
     - name: github
-      url: "https://github.com/ibethus/"
+      url: "https://github.com/ibethus?tab=repositories/"
     - name: linkedin
       url: "https://www.linkedin.com/in/ivan-b%C3%A9thus-570067b2/"
     - name: dev
