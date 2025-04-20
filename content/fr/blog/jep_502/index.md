@@ -1,7 +1,9 @@
 ---
-title: 'JDK25 : Initialisez des objets immuables avec les StableValue'
+title: 'JEP 502 : Initialisez des objets immuables avec les StableValue'
 date: 2025-04-11T18:20:06+02:00
 draft: false
+cover:
+  image: cover.png
 ---
 
 # Introduction
