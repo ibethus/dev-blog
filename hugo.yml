@@ -2,7 +2,7 @@ baseURL: https://blog.hot-coffee.dev/
 languageCode: fr-FR
 title: Hot coffee - devBlog ☕
 theme: PaperMod
-copyright: Ivan Béthus (CC BY 4.0) - 2024
+copyright: Ivan Béthus (CC BY 4.0) - 2024-2025
 enableRobotsTXT: true
 defaultContentLanguage: fr
 minify:
@@ -72,7 +72,7 @@ params:
   UseHugoToc: false
   disableSpecial1stPost: false
   disableScrollToTop: false
-  comments: false
+  comments: true
   hidemeta: false
   hideSummary: false
   showtoc: true

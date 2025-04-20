@@ -6,13 +6,11 @@ cover:
   image: mockoon_logo.png
 ---
 
-Dans le développement moderne d'applications, l'interaction avec des webservices est devenue incontournable. Cependant, que se passe-t-il lorsque ces services ne sont pas disponibles, sont en cours de développement, ou simplement instables ? C'est là que Mockoon entre en scène pour sauver la situation.
+Dans le développement moderne d'applications, l'interaction avec des webservices est devenue incontournable. Cependant, que se passe-t-il lorsque ces services ne sont pas disponibles, en cours de développement eux aussi, ou simplement instables ? C'est là que Mockoon entre en scène pour sauver la situation.
 
 ## Qu'est-ce que Mockoon ?
 
-Mockoon est un outil puissant qui permet de simuler des API REST avec une facilité déconcertante. Mais avant de plonger dans ses fonctionnalités, clarifions quelques concepts :
-
-### Les bases du mock
+Mockoon est un outil puissant permettant de simuler des webservices. Mais avant de plonger dans ses fonctionnalités, clarifions le concept :
 
 > Un **mock** (ou bouchon) est une imitation contrôlée d'un composant réel. Dans le contexte des webservices, il peut s'agir d'une réponse HTTP contenant des données factices. 
 
@@ -25,12 +23,12 @@ Mockoon se présente sous deux formes :
 
 L'interface de Mockoon est organisée autour de concepts clés :
 
-- **Environnements** : Espaces indépendants qui peuvent représenter différentes APIs ou contextes
-- **Endpoints** : Les routes de votre API simulée, chacune configurée pour répondre à des requêtes spécifiques
-- **Configuration des endpoints** : Méthode HTTP (GET, POST, etc.), chemin URL, en-têtes, et autres paramètres
-- **Configuration des réponses** : Code de statut HTTP, en-têtes, contenu du corps (avec support de templates)
+- **Environnements** : Espaces indépendants représentants un ou plusieurs webservices
+- **Endpoints** : Les routes de votre webservice simulé, chacune configurée pour répondre à des requêtes spécifiques
+- **Configuration des endpoints** : Verbe HTTP (GET, POST, etc.), chemin, en-têtes, et autres paramètres
+- **Configuration des réponses** : Code de statut HTTP, en-têtes, contenu du body (avec support de templates)
 
-Cette interface permet de mettre en place un mock fonctionnel en quelques clics, sans écrire une seule ligne de code.
+Cette interface permet de mettre en place un mock fonctionnel en quelques clics, sans écrire (ou presque) une seule ligne de code.
 
 ## Démonstration des fonctionnalités
 
@@ -44,7 +42,7 @@ L'un des atouts de Mockoon est sa capacité à [importer des contrats d'interfac
 4. Personnaliser ces réponses avec le système de templating intégré
 
 #### Exemple
-Ce [contrat d'interface open API](spacesuit-api.yaml) peut être importé par Mockoon, qui créera des routes http permettant de reproduire le comportement d'un webservice factice respectant le contrat :
+Ce [contrat d'interface open API](spacesuit-api.yaml) peut être importé par Mockoon, qui créera des routes HTTP permettant de reproduire le comportement d'un webservice factice respectant le contrat :
 
 {{< openapi "spacesuit-api.yaml" >}}
 
@@ -75,7 +73,7 @@ Le body des requêtes peut être configuré dynamiquement à l'aide d'un [systè
 {{< /highlight >}}
 
 * `repeat` fait partie des helpers de Mockoon et permet de répéter plusieurs fois un block
-* `faker` est une [librairie JavaScript](https://fakerjs.dev/) utilisée pour produire des données factices
+* `faker` est une librairie JavaScript utilisée pour produire des données factices
 * les helpers `oneOf` et `array` permettent ici de ne renvoyer qu'un élément d'une liste prédéfinie, pour correspondre aux valeurs possibles d'une enum
 
 #### Résultat
@@ -122,7 +120,7 @@ Les data buckets sont des réservoirs de données qui permettent de stocker et d
 - Simuler des [opérations CRUD](https://mockoon.com/docs/latest/api-endpoints/crud-routes/) complètes
 
 Dans notre cas, on peut simplement créer un databucket à partir des données générées sur le endpoint `/clones`. Créer ensuite une route CRUD à partir de ce databucket ouvre la voie à l'utilisation de tous les verbes HTTP courants (GET, POST, PUT, PATCH, DELETE).
-De plus, entre chaque action, l'état du databucket est mis à jour, ce qui rapproche le fonctionnement du mock de celui d'un webservice réel. 
+De plus, entre chaque action, l'état du databucket est mis à jour, ce qui rapproche le fonctionnement du mock de celui d'un webservice réel. Un redémarrage de l'environnement permet de réinitialiser l'état du databucket. 
 
 ### Mode Proxy
 
@@ -164,7 +162,7 @@ Une fois vos environnements de mock prêts, Mockoon permet plusieurs options de 
 # Installation
 npm install -g @mockoon/cli
 
-# Démarrage avec un ou plusieurs fichiers de configuration
+# Démarrage avec un environnement
 mockoon-cli start --data clones.json
 ```
 
@@ -201,6 +199,7 @@ Mockoon propose également une action GitHub officielle : [`mockoon/cli-action@v
 ## Mockoon vs Wiremock
 
 Si vous connaissez déjà [Wiremock](https://wiremock.org/), vous vous demandez peut-être pourquoi choisir Mockoon ?
+Voici mes pour et contre :
 
 - ✅ Plus rapide à mettre en place
 - ✅ Plus simple à configurer grâce à son interface graphique intuitive
@@ -214,4 +213,4 @@ Mockoon est un projet open-source en constante évolution. Vous pouvez contribue
 
 Mockoon représente une solution élégante et efficace pour le mocking de webservices, accessible tant aux débutants qu'aux développeurs expérimentés. Sa flexibilité, sa simplicité et sa puissance en font un outil incontournable dans l'arsenal de tout développeur.
 
-Que vous cherchiez à développer votre frontend indépendamment du backend, à tester des scénarios spécifiques, ou simplement à travailler sans connexion internet, Mockoon est là pour vous faciliter la tâche !
+Que vous cherchiez à développer votre frontend indépendamment du backend, à déployer un environnement de test isolé, ou simplement à travailler hors connexion, Mockoon est là pour vous faciliter la tâche !

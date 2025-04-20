@@ -1,0 +1,116 @@
+openapi: 3.0.0
+info:
+  title: Clone Management API
+  version: 1.0.0
+  description: Interface to manage clones' state and status
+
+paths:
+  /clones:
+    get:
+      summary: Retrieve the list of clones
+      responses:
+        "200":
+          description: Successfully retrieved clone list
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/Clone"
+    post:
+      summary: Create a new clone
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/Clone"
+      responses:
+        "201":
+          description: Clone successfully created
+
+  /clones/{id}:
+    get:
+      summary: Retrieve a clone by its ID
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        "200":
+          description: Clone found
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Clone"
+    put:
+      summary: Update a clone
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: string
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: "#/components/schemas/Clone"
+      responses:
+        "200":
+          description: Clone successfully updated
+    delete:
+      summary: Delete a clone
+      parameters:
+        - name: id
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        "204":
+          description: Clone successfully deleted
+components:
+  schemas:
+    Clone:
+      allOf:
+        - type: object
+          properties:
+            id:
+              type: string
+              format: uuid
+            serialNumber:
+              type: string
+            status:
+              type: string
+              enum: [OPERATIONAL, IN_MAINTENANCE, OUT_OF_ORDER, ON_MISSION]
+            oxygenLevel:
+              type: number
+              format: float
+              minimum: 0
+              maximum: 100
+            batteryLevel:
+              type: number
+              format: float
+              minimum: 0
+              maximum: 100
+            accuracy:
+              type: object
+              properties:
+                min:
+                  type: number
+                  format: integer
+                  description: Minimum accuracy
+                max:
+                  type: number
+                  format: integer
+                  description: Maximum accuracy
+            lastMaintenanceDate:
+              type: string
+              format: date-time
+            nextMaintenanceDate:
+              type: string
+              format: date-time
