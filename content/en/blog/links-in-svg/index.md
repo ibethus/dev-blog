@@ -2,6 +2,7 @@
 title: 'The Power of SVG for the Web'
 date: 2025-02-03T18:20:06+02:00
 draft: false
+keywords: ['svg', 'web-development', 'html', 'css', 'responsive-design', 'interactivity', 'vector-graphics', 'frontend']
 ---
 
  <style>

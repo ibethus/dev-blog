@@ -4,6 +4,7 @@ date: 2025-04-14T09:23:06+02:00
 draft: false
 cover:
   image: mockoon_logo.png
+keywords: ['api', 'mock', 'testing', 'development', 'openapi', 'swagger']
 ---
 
 In modern application development, interaction with web services has become essential. However, what happens when these services are unavailable, still under development, or simply unstable? This is where Mockoon comes in to save the day.

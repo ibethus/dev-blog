@@ -4,6 +4,7 @@ date: 2025-04-11T18:20:06+02:00
 draft: false
 cover:
   image: cover.png
+keywords: ['java', 'jep', 'optimization', 'performance', 'stable-values','jep-502']
 ---
 
 # Introduction

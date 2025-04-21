@@ -2,6 +2,7 @@
 title: 'Git: update-refs in a nutshell'
 date: 2024-04-22T22:20:06+02:00
 draft: false
+keywords: ['git', 'version-control', 'reference', 'maintenance', 'repository']
 ---
 
 When working on a versioned project, it is relatively common to end up with a "stack" of branches. What could be more frustrating than having to rebase all the other branches on top of the first one when updating it? This process becomes even more tedious when the number of branches is high or when they are regularly modified.

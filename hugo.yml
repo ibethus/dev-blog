@@ -73,7 +73,8 @@ markup:
 taxonomies:
   genre: genres
   tag: tags
-params:
+params: 
+  keywords: [java, programming, software-development, devops, coding, tech-blog, development-tools, software-engineering, backend-development, developer-tips]
   ShowShareButtons: true
   hideUntranslated: true
   generateSocialCard: true
@@ -101,10 +102,9 @@ params:
     hiddenInSingle: false
   label:
     text: Hot coffee - devBlog ☕
-  params:
   profileMode:
     enabled: true    
-  socialIcons: # optional
+  socialIcons: 
     - name: github
       url: "https://github.com/ibethus?tab=repositories/"
     - name: linkedin
