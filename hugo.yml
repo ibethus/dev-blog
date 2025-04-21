@@ -18,7 +18,7 @@ languages:
     weight: 2
     taxonomies:
       category: categories
-      tag: tags
+      tag: tags    
     menu:
       main:
         - name: Blog
@@ -27,6 +27,13 @@ languages:
         - name: Search
           url: /search
           weight: 2
+    params:
+      subtitle: "Just another dev blog."
+      buttons:
+      - name: Blog
+        url: "blog"
+      - name: "Who am I?"
+        url: "https://github.com/ibethus"
   fr:
     disabled: false
     contentDir: content/fr
@@ -36,7 +43,7 @@ languages:
     weight: 1
     taxonomies:
       category: categories
-      tag: tags
+      tag: tags    
     menu:
       main:
         - name: Blog
@@ -45,6 +52,13 @@ languages:
         - name: Recherche
           url: search
           weight: 2
+    params:
+      subtitle: "Juste un blog de dev."
+      buttons:
+      - name: Blog
+        url: "blog"
+      - name: Qui suis-je ?
+        url: "https://github.com/ibethus"
 markup:
   goldmark:
     renderer:
@@ -89,13 +103,7 @@ params:
     text: Hot coffee - devBlog ☕
   params:
   profileMode:
-    enabled: true
-    subtitle: "Just another dev blog."
-    buttons:
-      - name: Blog
-        url: "blog"
-      - name: Who am I ?
-        url: "https://github.com/ibethus"
+    enabled: true    
   socialIcons: # optional
     - name: github
       url: "https://github.com/ibethus?tab=repositories/"
