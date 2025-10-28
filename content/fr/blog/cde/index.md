@@ -15,7 +15,7 @@ Dans le monde du développement logiciel, l'onboarding des nouveaux développeur
 
 ### Qu'est-ce qu'un DevContainer ?
 
-Un **DevContainer** est une spécification qui formalise la description d'un environnement de développement conteneurisé. Initiée par Microsoft en 2022, cette spécification est aujourd'hui adoptée par de nombreux IDE comme VS Code, IntelliJ et bien d'autres.
+Un **DevContainer** est une spécification qui formalise la description d'un environnement de développement conteneurisé. Initiée par Microsoft en 2022, cette spécification est aujourd'hui adoptée par de nombreux IDE comme VS Code, IntelliJ et bien d'autres. Mais bien avant le financement massif par Microsoft (via Github, VSCode, ...), c'est **Red Hat** qui en était le précurseur dans le domaine avec ses [DevFile](https://devfile.io/) via le projet [Eclipse Che](https://eclipse.dev/che/) (adopté par la [CNCF](https://www.cncf.io/projects/devfile/) en 2022).
 
 La philosophie est simple : développer dans un conteneur avec tous les outils nécessaires pré-installés et configurés. Cela permet de :
 - Standardiser les environnements de développement entre tous les développeurs
@@ -38,7 +38,7 @@ Les DevContainers apportent des fonctionnalités spécifiques au développement 
 
 ### Mise en oeuvre
 
-Pour mettre en place un DevContainer, il suffit de créer un répertoire `.devcontainer` contenant un fichier `devcontainer.json`. Voici la configuration minimale :
+Pour mettre en place un DevContainer, il suffit de créer un répertoire `.devcontainer` contenant un fichier `devcontainer.json` qui respecte la spécification. Voici la configuration minimale :
 
 ```json
 {
@@ -47,7 +47,7 @@ Pour mettre en place un DevContainer, il suffit de créer un répertoire `.devco
 }
 ```
 
-Cette simple configuration suffit à démarrer ! Microsoft propose déjà plus d'une centaine d'images de base prêtes à l'emploi.
+Cette simple configuration suffit à démarrer ! Microsoft propose déjà plus d'une centaine d'images de base prêtes à l'emploi (cf. [templates pre-build](https://containers.dev/templates)).
 
 ### Les features : personnalisez votre environnement
 
@@ -65,11 +65,11 @@ Les **features** sont des scripts shell exécutés lors de la construction de l'
 }
 ```
 
-Plus d'un millier de features sont disponibles, et vous pouvez même créer les vôtres !
+Plus d'[un millier de features](https://containers.dev/features) sont disponibles, et vous pouvez même créer les vôtres (privé ou partagé) !
 
 ### Configuration avancée
 
-Les DevContainers permettent une configuration très fine de l'environnement :
+Les DevContainers permettent une configuration très fine de l'environnement. Notamment par des __hooks__ pour l'exécution de commandes aux différentes étapes de la construction de l'environnement.
 
 ```json
 {
@@ -93,7 +93,7 @@ Cette configuration permet de :
 
 ### Personnalisation de l'IDE
 
-Les DevContainers permettent également de personnaliser l'IDE lui-même :
+Les DevContainers permettent également de personnaliser l'IDE lui-même (structure spécifique à chaque outil implémentant la spécification : https://containers.dev/supporting) :
 
 ```json
 {
@@ -146,7 +146,7 @@ Avec des outils comme **DevPod** ou **Daytona**, le développeur lance lui-même
 
 #### 2. À Distance
 
-Des solutions comme **Coder**, **Gitpod**, **Theia Cloud** ou **Lapdev** proposent une approche différente où tout est géré à travers une interface web.
+Des solutions comme [Coder](https://coder.com/), **Gitpod** (récemment renommé [Ona](https://ona.com/), [Theia Cloud](https://theia-cloud.io/) ou [Lapdev](https://lap.dev/) proposent une approche différente où tout est géré à travers une interface web.
 
 **Coder** mérite une attention particulière car il peut être totalement self-hosted. Son architecture repose sur :
 - Un service **coderd** qui gère la création des workspaces et la connexion des machines
@@ -182,7 +182,7 @@ Les CDE sont particulièrement adaptés pour :
 - **Turnover important** : Onboarding simplifié
 - **Configuration complexe** : Environnements difficiles à reproduire localement
 - **Sécurité cruciale** : Code sensible qui ne doit pas quitter l'infrastructure
-- **Formation technique** : Facilite l'apprentissage sans configuration
+- **Formation technique** : Environnement éphémère préinstallé
 - **Projets open-source** : Permet aux contributeurs de démarrer rapidement
 
 ## Conclusion
