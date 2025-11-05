@@ -7,7 +7,7 @@ cover:
 keywords: ['ide', 'cde', 'Eclipse che', 'devpod', 'codespace']
 ---
 
-# Les Cloud Development Environments : Développez dans le Cloud pour un embarquement immédiat
+# Les Cloud Development Environments (CDE) - Embarquement immédiat !
 
 Dans le monde du développement logiciel, l'onboarding des nouveaux développeurs peut être un véritable casse-tête. Installation des outils, configuration de l'environnement, résolution des incompatibilités... Autant de problèmes que les Cloud Development Environments (CDE) promettent de résoudre. Mais avant de plonger dans le monde des CDE, il est essentiel de comprendre les technologies qui les sous-tendent : les DevContainers et les DevFiles.
 
@@ -118,17 +118,19 @@ Ainsi, tous les développeurs partagent non seulement le même environnement tec
 
 Les environnements de développement dans le cloud ne datent pas d'hier :
 
-**Les Précurseurs (2010-2014)**
+#### Les Précurseurs (2010-2014)
 - **Cloud9** (2010) : Premier IDE cloud majeur, révolutionnaire pour l'époque mais sans conteneurisation
 - **Codeanywhere** (2013) : IDE collaboratif dans le navigateur
 
-**Le Game Changer**
-- **Eclipse Che** (2014) : Premier CDE basé sur des conteneurs Docker et Kubernetes. C'est au sein de ce projet que le concept des **DevFiles** (équivalent YAML des DevContainers) a été incubé. En 2019, Eclipse Che supporte officiellement les DevFiles et est racheté par RedHat.
+#### Le Game Changer
+En 2014, [Codenvy](https://www.neosoft.fr/nos-publications/blog-tech/eclipse-che-un-ide-sur-le-cloud/), en se basant sur la spécification introduite par le projet open source
+Eclipse Che, créé le premier IDE 100% orienté cloud. L'idée : pouvoir réaliser le dévelopement et la création d'un livrable uniquement sur des plateformes cloud.
+C'est à cette période que le concept des **DevFiles** a été incubé. En 2019, Eclipse Che supporte officiellement les DevFiles et Codenvy est racheté par RedHat.
 
-**La Popularisation (2019-2022)**
-- **RedHat OpenShift Dev Spaces** (2019)
-- **Microsoft GitHub Codespaces** (2020) : Adoption massive grâce à l'intégration avec GitHub
-- **Google Cloud Workstations** (2022)
+#### La Popularisation (2019-2022)
+- **RedHat OpenShift Dev Spaces** (2019 - DevFiles)
+- **Microsoft GitHub Codespaces** (2020 - DevContainers) : Adoption massive grâce à l'intégration avec GitHub et VScode
+- **Google Cloud Workstations** (2022 - DevContainers)
 
 ### Comment fonctionnent les CDE ?
 
@@ -142,7 +144,10 @@ Avec des outils comme **DevPod** ou **Daytona**, le développeur lance lui-même
 - Démarrent un serveur SSH chez le provider pour router les services
 - Le backend de l'IDE tourne sur le provider, le frontend en local
 
-**DevPod** est particulièrement intéressant car il fonctionne sans paywall et supporte de nombreux providers.
+[DevPod](https://devpod.sh/) est particulièrement intéressant car il fonctionne sans paywall et supporte de nombreux providers.
+
+![devpod](devpod1.svg)
+*Diagramme de composant de DevPod*
 
 #### 2. À Distance
 
@@ -153,11 +158,14 @@ Des solutions comme [Coder](https://coder.com/), **Gitpod** (récemment renommé
 - Des workspaces avec durées de vie limitées (configurables par l'admin)
 - Une sauvegarde des modifications même si le workspace est arrêté
 
+![coder diragram, ](coder-diagram.png)
+*Diagramme d'infrastructure simplifié de Coder*
+
 ## CDE : Avantages et inconvénients
 
 ### Les inconvénients
 
-Il est important d'être honnête sur les contraintes :
+Soyons honnêtes sur les contraintes !
 
 - **📡 Accès au réseau** : Nécessite une connexion internet stable (les machines savent se reconnecter en cas de coupure)
 - **🎛️ Complexité initiale** : Le setup initial peut être complexe selon les solutions
@@ -166,11 +174,11 @@ Il est important d'être honnête sur les contraintes :
 
 ### Les avantages
 
-Les bénéfices sont nombreux et convaincants :
+En revanche, es bénéfices sont nombreux :
 
 - **⚡ Onboarding instantané** : Les nouveaux développeurs peuvent travailler dès le jour 0
 - **🔄 Environnement reproductible** : Mêmes versions et configurations partout
-- **🔒 Sécurité et isolement** : Le code source ne quitte pas le serveur
+- **🔒 Isolement** : Le code source est isolé sur un serveur (même s'il transite forcément sur le réseau)
 - **🛠️ Configuration centralisée** : Gérée par l'équipe DevOps
 - **💻 Machines légères** : Plus besoin de machines de guerre pour les développeurs
 
