@@ -30,11 +30,13 @@ languages:
           url: /search
           weight: 2
     params:
-      subtitle: "Just another dev blog."
+      subtitle: "Notes from a passionate developer — Java · DevOps · Software Craftsmanship"
+      profileMode:
+        title: "Hi, I'm Ivan 👋"
       buttons:
-      - name: Blog
+      - name: 📖 Read the Blog
         url: "blog"
-      - name: "Who am I?"
+      - name: "👤 About me"
         url: "https://github.com/ibethus"
   fr:
     disabled: false
@@ -55,11 +57,13 @@ languages:
           url: search
           weight: 2
     params:
-      subtitle: "Juste un blog de dev."
+      subtitle: "Notes d'un développeur passionné — Java · DevOps · Artisanat logiciel"
+      profileMode:
+        title: "Bonjour, je suis Ivan 👋"
       buttons:
-      - name: Blog
+      - name: 📖 Lire le Blog
         url: "blog"
-      - name: Qui suis-je ?
+      - name: "👤 À propos de moi"
         url: "https://github.com/ibethus"
 markup:
   goldmark:
@@ -105,7 +109,11 @@ params:
   label:
     text: Hot coffee - devBlog ☕
   profileMode:
-    enabled: true    
+    enabled: true
+    imageUrl: "https://github.com/ibethus.png"
+    imageTitle: "Ivan Béthus"
+    imageWidth: 120
+    imageHeight: 120
   socialIcons: 
     - name: github
       url: "https://github.com/ibethus?tab=repositories/"
