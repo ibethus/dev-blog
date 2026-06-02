@@ -55,4 +55,10 @@
         {{- end }}
     </div>
     {{- end}}
+    {{- with .Content }}
+    <hr class="profile-separator">
+    <div class="post-content">
+        {{ . }}
+    </div>
+    {{- end }}
 </div>

@@ -1,0 +1,22 @@
+/* Custom styling for the homepage welcome section */
+.profile-separator {
+    margin: 2rem auto;
+    width: 80%;
+    max-width: 200px;
+    border: none;
+    height: 1px;
+    background: linear-gradient(to right, transparent, var(--border), transparent);
+}
+
+.profile .post-content {
+    text-align: center;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.profile .post-content p {
+    margin: 1rem 0;
+    line-height: 1.8;
+    font-size: 1.1rem;
+}
