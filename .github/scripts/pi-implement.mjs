@@ -99,7 +99,7 @@ function logUsage(session) {
 }
 
 function writeUsageFile(session) {
-  const outDir = process.env.RUNNER_TEMP || "/tmp";
+  const outDir = process.cwd();
   const modelName = session.model?.id || "unknown";
   const modelProvider = PROVIDER || "unknown";
   const messages = session.messages || [];
