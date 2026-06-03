@@ -30,7 +30,7 @@ languages:
           url: /search
           weight: 2
     params:
-      subtitle: "Just another dev blog."
+      subtitle: "Explore software engineering insights, best practices, and technical deep-dives into modern development."
       buttons:
       - name: Blog
         url: "blog"
@@ -55,7 +55,7 @@ languages:
           url: search
           weight: 2
     params:
-      subtitle: "Juste un blog de dev."
+      subtitle: "Découvrez des insights en ingénierie logicielle, les meilleures pratiques et des analyses approfondies du développement moderne."
       buttons:
       - name: Blog
         url: "blog"
